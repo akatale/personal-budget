@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- <nav>,  <mark>, <aside>, <time>, <section> tags are added as Semantic HTML change-->
+<!-- (Open Graph tag), (twitter card tag), (h3: Header tag), (Canonical tag) are added as SEO Change-->
+<!-- <button>, <abbr>, (good link text), <alt> are added as A11y change-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Change 1: This is an SEO Change (Open Graph tag)-->
+    <meta name="og:title" property="og:title" content="Personal Budget">
+<!-- Change 2: This is an SEO Change (Twitter card tag)-->
+    <meta name="twitter:card" content="summary">
     <title>Personal Budget</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
@@ -23,33 +30,31 @@
         <h2>A personal-budget management app</h2>
     </div>
 
-    <!-- Start--This is a Semantic HTML Change -->
-    <!-- <nav>,  <mark>, <aside>, <time>, <section> tags are added-->
-    
-    <!-- This is a Semantic HTML Change -->
+    <!-- This is a Semantic HTML Change (<nav>, <mark>)-->
     <nav>
         <a href="https://www.thebalance.com/how-to-make-a-budget-1289587"><mark>Personal Budget Guide</mark></a>
     </nav>
     <div class="h-event">
-    <!-- This is a Semantic HTML Change -->
+    <!-- This is a Semantic HTML Change (<aside>, <mark>)-->
         <aside>
-        <h1 class="p-name"><mark>Meetup</mark></h1>
+    <!-- Change 3: This is an SEO Change (h3: Header tag)-->
+        <h3 class="p-name"><mark>Meetup</mark></h3>
         <p>From 
-    <!-- This is a Semantic HTML Change -->
+    <!-- This is a Semantic HTML Change (<time>)-->
           <time class="dt-start" datetime="2020-09-24 12:00">24<sup>th</sup> Sept 2020, 12:00</time>
           to <time class="dt-end" datetime="2020-09-24 18:00">18:00</time>
           at <span class="p-location">Some bar in SF</span></p>
         <p class="p-summary">Get together and discuss all things budget-related.</p>
     
-    <!-- This is an A11y Change -->
-    <!-- Change 1 & 2: <button>, <abbr> tags are added as A11y Change-->
+    <!-- Change 1 & 2: This is an A11y Change (<button>, <abbr>) -->
         <button><abbr title="Click here to register for meetup"><b>Register</b></abbr></button>
         </aside>
     </div>
-    <!-- This is a Semantic HTML Change -->
+    <!-- This is a Semantic HTML Change (<section>, <mark>)-->
     <section>
         <h2><mark>Budget History</mark></h2>
-        <p>A government budget is a document prepared by the government and/or other political entity presenting its anticipated tax revenues 
+    <!-- Change 3: This is an A11y Change (good link text)-->
+        <p>A government <a href = "https://www.investopedia.com/terms/b/budget.asp"><mark>budget</mark></a> is a document prepared by the government and/or other political entity presenting its anticipated tax revenues 
             (Inheritance tax, income tax, corporation tax, import taxes) and proposed spending/expenditure (Health care, Education, Defence, Roads, State Benefit) for the coming financial year.</p>
     </section>
       
@@ -58,7 +63,9 @@
         <p>The overarching goal of a personal budget is to minimize expenses and maximize savings. By cutting down on unnecessary spending and
             increasing your monthly savings, you can put that extra money toward important long-term financial goals like: Lowering credit card debt. Paying off loans.</p>
     </section>
-    <!-- End--This is a Semantic HTML Change -->
+
+    <!-- Change 4: This is an SEO Change (Canonical tag)-->
+    <link rel="canonical" href="https://www.thebalance.com/how-to-make-a-budget-1289587">
 
     <div class="container center">
 
@@ -132,8 +139,7 @@
 
     </div>
     <center>
-        <!-- This is an A11y Change -->
-        <!-- Change 3: <alt> tag is used-->
+    <!-- Change 4: This is an A11y Change (<alt> tag)-->
         <img src="thankyou.jpg" alt="Thank you for visiting" style="width: 21%">
     </center>
     <div class="bottom">
